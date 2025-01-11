@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Component from './components/Component';
+import Accordion from './components/accordion/accordion';
 
-function App() {
+export default function App() {
     return (
-        <div className="App">
-            <Component />
-        </div>
+        <Accordion />
     );
 
 }
-
-export default App;
