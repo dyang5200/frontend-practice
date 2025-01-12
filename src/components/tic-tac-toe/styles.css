@@ -1,0 +1,17 @@
+.message {
+    padding: 25px 25px 15px 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: [first] 50px [second] 50px [third] 50px;
+    grid-template-rows: [first] 50px [second] 50px [third] 50px;
+}
+
+.grid-item {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    text-align: center;
+}

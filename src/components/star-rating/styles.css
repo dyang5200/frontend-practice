@@ -9,7 +9,7 @@ body {
     height: var(--icon-size);
     width: var(--icon-size);
 
-    :hover {
+    å :hover {
         fill: yellow;
     }
 }
