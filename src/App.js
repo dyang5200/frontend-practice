@@ -10,7 +10,7 @@ export default function App() {
     return (
         <div>
             {/* <Accordion /> */}
-            {/* <StarRating maxStars={5} currentRating={0} /> */}
+            {/* <StarRating maxStars={5} currentRating={2} /> */}
             <TicTacToe />
         </div>
     );

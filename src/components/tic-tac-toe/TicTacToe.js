@@ -22,7 +22,7 @@ export default function TicTacToe() {
     const [winner, setWinner] = useState();
     const [isOver, setIsOver] = useState(false);
 
-    function handleClick(index) {
+    const handleClick = (index) => {
         // Can't click if this square is already taken
         if (board[index]) {
             return;
@@ -62,7 +62,7 @@ export default function TicTacToe() {
         }
     }
 
-    function handleReset() {
+    const handleReset = () => {
         setTurn('X');
         setBoard(Array(size * size).fill(null));
         setXPositions(new Set());
@@ -80,13 +80,19 @@ export default function TicTacToe() {
             <div className='grid-container'>
                 {board.map((_, index) => {
                     return (
-                        <div className='grid-item' tabIndex={index} onClick={() => handleClick(index)}>
-                            {board[index]}
-                        </div>
+                        <Square mark={board[index]} index={index} onClick={() => handleClick(index)} />
                     )
                 })}
             </div>
             <button onClick={() => handleReset()}> Reset </button>
         </div>
     );
+}
+
+export function Square({ mark, index, onClick }) {
+    return (
+        <div className='grid-item' tabIndex={index} onClick={onClick}>
+            {mark}
+        </div>
+    )
 }

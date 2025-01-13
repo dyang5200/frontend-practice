@@ -23,7 +23,7 @@ export default function StarRating({ maxStars, currentRating }) {
             {starArray.map((_, index) => {
                 return <Star isMarked={(hoveredStars || clickedStars) > index} index={index + 1}
                     onMouseOver={() => handleOnHover(index)}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseLeave={() => handleMouseLeave()}
                     onClick={() => handleClick(index)} />
             })}
         </div>
@@ -31,7 +31,7 @@ export default function StarRating({ maxStars, currentRating }) {
 }
 
 
-function Star({ isMarked, index, onMouseOver, onMouseLeave, onClick }) {
+export function Star({ isMarked, index, onMouseOver, onMouseLeave, onClick }) {
     return (
         <div onMouseOver={onMouseOver}
             onMouseLeave={onMouseLeave}
