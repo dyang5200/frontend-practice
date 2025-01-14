@@ -6,6 +6,8 @@ import ContactForm from './components/contact-form/ContactForm';
 import StarRating from './components/star-rating/StarRating';
 import TicTacToe from './components/tic-tac-toe/TicTacToe';
 import NestedComments from './components/nested-comments/NestedComments';
+import ToDoList from './components/to-do/ToDoList';
+
 
 export default function App() {
     return (
@@ -13,7 +15,8 @@ export default function App() {
             {/* <Accordion /> */}
             {/* <StarRating maxStars={5} currentRating={2} /> */}
             {/* <TicTacToe /> */}
-            <NestedComments />
+            {/* <NestedComments /> */}
+            <ToDoList />
         </div>
     );
 }
