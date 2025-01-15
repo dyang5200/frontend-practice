@@ -1,0 +1,26 @@
+.autocomplete {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+}
+
+.search-bar {
+    padding: 0.25rem;
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestion {
+    padding: 1rem;
+    border: 1px solid black;
+
+    &:hover {
+        background-color: lightblue;
+    }
+}
