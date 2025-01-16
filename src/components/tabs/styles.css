@@ -1,0 +1,9 @@
+.tab-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab {
+    padding: 0.5rem;
+    border: 0.0625rem solid black;
+}
