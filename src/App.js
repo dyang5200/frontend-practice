@@ -22,8 +22,8 @@ export default function App() {
             {/* <NestedComments /> */}
             {/* <ToDoList /> */}
             {/* <AutoComplete countriesList={countriesList} /> */}
-            {/* <Timer /> */}
-            <Tabs>
+            <Timer />
+            {/* <Tabs>
                 <Tab title="First tab">
                     <div>
                         <h2> First Content </h2>
@@ -42,7 +42,7 @@ export default function App() {
                         <ToDoList />
                     </div>
                 </Tab>
-            </Tabs>
+            </Tabs> */}
         </div>
     );
 }

@@ -23,7 +23,6 @@ import './styles.css';
 // Each child has a title and it's own children (same props as <Tab>)
 export default function Tabs({ children }) {
     const [activeTab, setActiveTab] = useState(0);
-    console.log(children);
 
     return (
         <div>
